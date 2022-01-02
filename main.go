@@ -15,24 +15,12 @@ func main() {
 				"temperature_celsius": "$.current.temp_c",
 			},
 		},
-		{
-			Endpoint: "https://api.weatherbit.io/v2.0/current?key=fa0e65846eba499eaa4104508220201&city=Tokyo&country=JP",
-			JSONPaths: map[string]string{
-				"temperature_celsius": "$.data[0].temp",
-			},
-		},
 	}
 	delhiEndpoints := []models.Endpoint{
 		{
 			Endpoint: "http://api.weatherapi.com/v1/current.json?key=fa0e65846eba499eaa4104508220201&q=Delhi,IN",
 			JSONPaths: map[string]string{
 				"temperature_celsius": "$.current.temp_c",
-			},
-		},
-		{
-			Endpoint: "https://api.weatherbit.io/v2.0/current?key=fa0e65846eba499eaa4104508220201&city=Delhi&country=IN",
-			JSONPaths: map[string]string{
-				"temperature_celsius": "$.data[0].temp",
 			},
 		},
 	}
